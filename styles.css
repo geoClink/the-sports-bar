@@ -96,6 +96,15 @@
          gap: 2rem;
          list-style: none;
         }
+
+        .nav-links a:hover, .nav-links a.active {
+         color: var(--neon-amber);
+        }
+
+        .nav-links a.active {
+         border-bottom: 2px solid var(--neon-amber);
+         padding-bottom: 4px;
+        }
 /* ============================================================
    6. BUTTONS
    ============================================================ */
