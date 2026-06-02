@@ -23,7 +23,9 @@
     :root {
         --bg: #1a1612;
         --fg: #f5ede0;
+        --f-display: "Big Shoulders Display", Impact, sans-serif;
         --f-body: "DM Sans", system-ui, sans-serif;
+        --f-mono: "JetBrains Mono", monospace;
         --neon-amber: #f5b942;
         --line: #4a3f33;
     }
@@ -58,7 +60,42 @@
 /* ============================================================
    5. NAVBAR
    ============================================================ */
+        .logo {
+         display: flex;
+         align-items: center;
+         gap: 0.75rem;
+        }
 
+        .logo-mark {
+         display: flex;
+         flex-direction: column;
+        }
+
+        .logo-mark {
+         
+        }
+
+        .logo-name {
+         font-family: var(--f-display);
+         font-weight: 900;
+        }
+
+        .logo-sub {
+         font-family: var(--f-mono);
+         font-size: 0.6rem;
+        }
+        .navbar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1rem 2rem;
+        }
+
+        .nav-links {
+         display: flex;
+         gap: 2rem;
+         list-style: none;
+        }
 /* ============================================================
    6. BUTTONS
    ============================================================ */
@@ -66,7 +103,9 @@
 /* ============================================================
    7. HERO
    ============================================================ */
-
+        .hero {
+         padding: 1rem 2rem;
+        }
 /* ============================================================
    8. FOOTER
    ============================================================ */
