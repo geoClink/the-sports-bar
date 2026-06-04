@@ -36,14 +36,432 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
-        <div class="live-indicator">14 LIVE
-        </div>
+        <div class="live-indicator">14 LIVE</div>
     </nav>
 
+    <header class="menu-hero-section">
+        <div class="menu-hero-content">
+            <span class="menu-tag">BAR • KITCHEN</span>
+            <h1 class="menu-title">THE MENU</h1>
+            <p class="menu-subtitle">Built like a stadium concourse. Wings, burgers, beer. A few things we're proud of,
+                and zero things we're not.</p>
+        </div>
+
+        <div class="kitchen-status-card">
+            <div class="status-top-row">
+                <span class="status-label-main">KITCHEN STATUS</span>
+                <span class="status-pill-open"><span class="pulse-dot"></span> OPEN</span>
+            </div>
+            <div class="status-times-grid">
+                <div class="status-time-block">
+                    <span class="status-time-label">FOOD UNTIL</span>
+                    <span class="status-time-value">12:00 AM</span>
+                </div>
+                <div class="status-time-block">
+                    <span class="status-time-label">BAR UNTIL</span>
+                    <span class="status-time-value">1:00 AM</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="filter-section">
+        <div class="filter-bar-container">
+            <div class="filter-buttons">
+                <span class="filter-title-label">FILTER ·</span>
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="spicy">SPICY</button>
+                <button class="filter-btn" data-filter="vegetarian">VEGETARIAN</button>
+                <button class="filter-btn" data-filter="gluten-free">GLUTEN-FREE</button>
+                <button class="filter-btn" data-filter="staff-pick">STAFF PICKS</button>
+            </div>
+            <div class="filter-legend">
+                <span>🔥 SPICY</span>
+                <span>V VEG</span>
+                <span>GF GLUTEN-FREE</span>
+                <span>★ STAFF PICK</span>
+            </div>
+        </div>
+    </section>
+
     <main>
+        <section class="menu-category-block" data-category="wings">
+            <div class="category-header-row">
+                <h2 class="category-title neon-text-alt">WINGS</h2>
+                <p class="category-description">Brined 24 hours. Fried twice. Tossed in front of you.</p>
+            </div>
+
+            <div class="menu-products-grid">
+                <div class="menu-item-row" data-tags="spicy">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Classic Buffalo <span class="item-icon-fire">🔥</span></h3>
+                        <span class="item-price">$14</span>
+                    </div>
+                    <p class="item-ingredients">Frank's, butter, blue cheese, celery</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Honey Gold</h3>
+                        <span class="item-price">$14</span>
+                    </div>
+                    <p class="item-ingredients">Carolina honey-mustard, candied jalapeños</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="spicy">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Korean BBQ <span class="item-icon-fire">🔥</span></h3>
+                        <span class="item-price">$15</span>
+                    </div>
+                    <p class="item-ingredients">Gochujang glaze, sesame, scallion</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Garlic Parm</h3>
+                        <span class="item-price">$14</span>
+                    </div>
+                    <p class="item-ingredients">Roasted garlic, parmesan, herb</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="spicy">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Press Box Hot <span class="item-icon-fire">🔥 🔥 🔥</span></h3>
+                        <span class="item-price">$16</span>
+                    </div>
+                    <p class="item-ingredients">Ghost pepper, you sign a waiver</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Dry Rub</h3>
+                        <span class="item-price">$14</span>
+                    </div>
+                    <p class="item-ingredients">Memphis-style, lemon-pepper finish</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category-block" data-category="starters">
+            <div class="category-header-row">
+                <h2 class="category-title neon-text-alt">STARTERS</h2>
+                <p class="category-description">Built for sharing, built for sliding plates around.</p>
+            </div>
+
+            <div class="menu-products-grid">
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Loaded Tots</h3>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <p class="item-ingredients">Cheese curds, brisket, scallion, sour cream</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Pretzel Board</h3>
+                        <span class="item-price">$11</span>
+                    </div>
+                    <p class="item-ingredients">Bavarian pretzels, beer cheese, mustard flight</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="vegetarian">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Nachos Grandstand <span class="item-icon-tag text-veg">V</span></h3>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <p class="item-ingredients">Three cheeses, pico, jalapeños, crema, beef +4</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Crab Cake Sliders</h3>
+                        <span class="item-price">$16</span>
+                    </div>
+                    <p class="item-ingredients">Lump crab, remoulade, brioche, slaw (x3)</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="vegetarian">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Fried Pickles <span class="item-icon-tag text-veg">V</span></h3>
+                        <span class="item-price">$9</span>
+                    </div>
+                    <p class="item-ingredients">Buttermilk-battered spears, ranch</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Calamari</h3>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <p class="item-ingredients">Lemon zest, smoked paprika aioli</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category-block" data-category="burgers-mains">
+            <div class="category-header-row">
+                <h2 class="category-title neon-text-alt">BURGERS & MAINS</h2>
+                <p class="category-description">Smashed, stacked, served on butter-toasted brioche.</p>
+            </div>
+
+            <div class="menu-products-grid">
+                <div class="menu-item-row" data-tags="staff-pick">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">The Press Box Burger <span class="item-icon-star">★</span></h3>
+                        <span class="item-price">$17</span>
+                    </div>
+                    <p class="item-ingredients">Dry-aged double, cheddar, bourbon onions, press sauce</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Beer Cheese Burger</h3>
+                        <span class="item-price">$16</span>
+                    </div>
+                    <p class="item-ingredients">Stout cheese, bacon, fried onion, garlic aioli</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Patty Melt</h3>
+                        <span class="item-price">$15</span>
+                    </div>
+                    <p class="item-ingredients">Rye, swiss, caramelized onion, thousand island</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="spicy">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Nashville Hot Chicken <span class="item-icon-fire">🔥</span></h3>
+                        <span class="item-price">$16</span>
+                    </div>
+                    <p class="item-ingredients">Sandwich w/ pickles, slaw, comeback sauce</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Smoked Brisket Dip</h3>
+                        <span class="item-price">$18</span>
+                    </div>
+                    <p class="item-ingredients">Au jus, horseradish cream, gruyere, baguette</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="gluten-free">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Blackened Salmon Bowl <span class="item-icon-tag text-gf">GF</span></h3>
+                        <span class="item-price">$19</span>
+                    </div>
+                    <p class="item-ingredients">Wild rice, charred corn, avocado, chipotle</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category-block" data-category="greens-sides">
+            <div class="category-header-row">
+                <h2 class="category-title neon-text-alt">GREENS & SIDES</h2>
+                <p class="category-description">Yeah, we have salads. They're actually good.</p>
+            </div>
+
+            <div class="menu-products-grid">
+                <div class="menu-item-row" data-tags="gluten-free">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Wedge <span class="item-icon-tag text-gf">GF</span></h3>
+                        <span class="item-price">$11</span>
+                    </div>
+                    <p class="item-ingredients">Iceberg, blue cheese, bacon, tomato, chive</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Steakhouse Caesar</h3>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <p class="item-ingredients">Romaine, crouton, parm, anchovy dressing</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="vegetarian gluten-free">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Press Bowl <span class="item-icon-tag text-veg">V</span> <span
+                                class="item-icon-tag text-gf">GF</span></h3>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <p class="item-ingredients">Quinoa, kale, beets, citrus, feta, almond</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="vegetarian">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Truffle Fries <span class="item-icon-tag text-veg">V</span></h3>
+                        <span class="item-price">$8</span>
+                    </div>
+                    <p class="item-ingredients">Hand-cut, parmesan, herb, truffle oil</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="vegetarian">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Onion Rings <span class="item-icon-tag text-veg">V</span></h3>
+                        <span class="item-price">$7</span>
+                    </div>
+                    <p class="item-ingredients">Beer-battered, sweet pepper sauce</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="vegetarian">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Mac & Cheese <span class="item-icon-tag text-veg">V</span></h3>
+                        <span class="item-price">$9</span>
+                    </div>
+                    <p class="item-ingredients">Five cheeses, crispy breadcrumb</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category-block" data-category="drafts">
+            <div class="category-header-row">
+                <h2 class="category-title neon-text-alt">DRAFTS</h2>
+                <p class="category-description">Twenty-two taps. Local first, then everything else.</p>
+            </div>
+
+            <div class="menu-products-grid">
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Half Acre Daisy Cutter · IPA</h3>
+                        <span class="item-price">$8</span>
+                    </div>
+                    <p class="item-ingredients">Chicago, IL · 5.2%</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Goose Island 312 · Wheat</h3>
+                        <span class="item-price">$7</span>
+                    </div>
+                    <p class="item-ingredients">Chicago, IL · 4.2%</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Revolution Anti-Hero · IPA</h3>
+                        <span class="item-price">$8</span>
+                    </div>
+                    <p class="item-ingredients">Chicago, IL · 6.7%</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Solemn Oath Snaggletooth · DIPA</h3>
+                        <span class="item-price">$9</span>
+                    </div>
+                    <p class="item-ingredients">Naperville, IL · 7.5%</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Allagash White · Belgian</h3>
+                        <span class="item-price">$8</span>
+                    </div>
+                    <p class="item-ingredients">Portland, ME · 5.2%</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Founders Breakfast Stout</h3>
+                        <span class="item-price">$9</span>
+                    </div>
+                    <p class="item-ingredients">Grand Rapids, MI · 8.3%</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Modelo Especial · Lager</h3>
+                        <span class="item-price">$7</span>
+                    </div>
+                    <p class="item-ingredients">Mexico · 4.4%</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Athletic Run Wild · N/A</h3>
+                        <span class="item-price">$6</span>
+                    </div>
+                    <p class="item-ingredients">IPA · &lt;0.5%</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category-block" data-category="cocktails">
+            <div class="category-header-row">
+                <h2 class="category-title neon-text-alt">COCKTAILS</h2>
+                <p class="category-description">Old guard plus a few we're proud of.</p>
+            </div>
+
+            <div class="menu-products-grid">
+                <div class="menu-item-row" data-tags="staff-pick">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">The Halsted Old Fashioned <span class="item-icon-star">★</span></h3>
+                        <span class="item-price">$14</span>
+                    </div>
+                    <p class="item-ingredients">Bulleit, demerara, orange bitters, smoke</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Bleacher Bloody Mary</h3>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <p class="item-ingredients">House mix, pickled everything, slim jim</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Margarita de la Casa</h3>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <p class="item-ingredients">Tequila blanco, lime, agave, salted rim</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Whiskey Sour</h3>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <p class="item-ingredients">Rye, lemon, egg white, angostura</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Negroni</h3>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <p class="item-ingredients">Gin, campari, sweet vermouth, orange</p>
+                </div>
+
+                <div class="menu-item-row" data-tags="">
+                    <div class="menu-item-header">
+                        <h3 class="item-name">Game-Day Spritz</h3>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <p class="item-ingredients">Aperol, prosecco, soda, orange</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-banner-container" data-category="always-visible">
+            <div class="promo-banner-card">
+                <div class="promo-left-content">
+                    <span class="promo-tagline">ORDER ONLINE</span>
+                    <h2 class="promo-heading">WINGS TO YOUR COUCH.</h2>
+                    <p class="promo-text">Pickup in 20. Delivery citywide via DoorDash, Uber Eats, and Grubhub.</p>
+                </div>
+
+                <div class="promo-action-buttons">
+                    <a href="#" class="btn-promo-yellow">ORDER PICKUP</a>
+                    <a href="#" class="btn-promo-dark">DOORDASH</a>
+                    <a href="#" class="btn-promo-dark">UBER EATS</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-     <footer>
+    <footer>
         <div class="footer-columns">
             <div class="footer-column">
                 <div class="logo">
@@ -101,7 +519,7 @@
 
         </div>
     </footer>
-
+<script src="menu-filter.js"></script>
 </body>
 
 </html>

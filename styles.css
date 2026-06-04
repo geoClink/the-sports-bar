@@ -119,6 +119,12 @@ button {
 }
 
 .navbar {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   background-color: rgba(26, 22, 18, 0.95);
+   backdrop-filter: blur(8px);
+   border-bottom: 1px solid var(--line);
    display: flex;
    align-items: center;
    padding: 1rem 2rem;
@@ -1094,3 +1100,11 @@ footer {
       align-items: stretch;
    }
 }
+
+/* ==========================================================================
+   STATE CLASSES (JavaScript Toggles)
+   ========================================================================== */
+
+   .menu-item-row.is-hidden, .menu-category-block.is-hidden {
+      display: none !important;
+   }
