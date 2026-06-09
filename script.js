@@ -15,3 +15,41 @@ document.addEventListener("DOMContentLoaded", () => {
         todayRow.classList.add('is-today');
     }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const menuItems = document.querySelectorAll(".menu-item-row");
+    const categories = document.querySelectorAll(".menu-category-block");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            document.querySelector(".filter-btn.active")?.classList.remove("active");
+            button.classList.add("active");
+
+            const activeFilter = button.getAttribute("data-filter");
+
+            menuItems.forEach(item => {
+                const rawTags = item.getAttribute("data-tags") || "";
+                const itemTagsArray = rawTags.toLowerCase().split(" ").filter(t => t);
+
+                if (activeFilter === "all" || itemTagsArray.includes(activeFilter.toLowerCase())) {
+                    item.classList.remove("is-hidden");
+                } else {
+                    item.classList.add("is-hidden");
+                }
+            });
+
+            categories.forEach(category => {
+                const visibleItems = category.querySelectorAll(".menu-item-row:not(.is-hidden)");
+
+                if (activeFilter !== "all" && visibleItems.length === 0) {
+                    category.classList.add("is-hidden");
+                } else {
+                    category.classList.remove("is-hidden");
+                }
+            });
+        });
+    });
+});
