@@ -1,25 +1,29 @@
 @charset "UTF-8";
 
 /* TABLE OF CONTENTS
-   1. Reset
-   2. Tokens
-   3. Base Elements
-   4. Layout helpers
-   5. Navbar
-   6. Buttons
-   7. Hero
-   8. Dashboard Stats
-   9. Ticker Tape
-   10. Schedule Section & Cards
-   11. Weekly Lineup & Featured (Height Locked)
-   11b. Features, Big Stats & Events Banner (Image Integrated)
-   12. Footer
-   13. Responsive
-   14. Menu Hero
-   15. Menu Filter System
-   16. Menu Categories & Glow
-   17. Menu Product Grid
-   18. Menu Mobile Responsive
+   1.   Reset
+   2.   Design Tokens
+   3.   Base Elements
+   4.   Layout Helpers
+   5.   Navbar
+   6.   Buttons
+   7.   Hero
+   8.   Dashboard Stats
+   9.   Ticker Tape
+   10.  Schedule Section & Cards
+   10b. Games Grid Matrix Layout
+   10c. Games Hero & Minidashboard
+   10d. Games Filter Bar
+   11.  Weekly Lineup & Featured
+   11b. Features, Big Stats & Events Banner
+   12.  Footer
+   13.  Responsive
+   14.  Menu Hero
+   15.  Menu Filter System
+   16.  Menu Categories & Glow
+   17.  Menu Product Grid
+   18.  Menu Mobile Responsive
+   19.  State Classes
 */
 
 /* ============================================================
@@ -34,7 +38,7 @@
 }
 
 /* ============================================================
-   2. DESIGN TOKENS (variables)
+   2. DESIGN TOKENS
    ============================================================ */   
 :root {
    --bg: #1a1612;
@@ -540,7 +544,7 @@ button {
 /* ============================================================
    10b. GAMES GRID MATRIX LAYOUT
    ============================================================ */
-   .schedule-matrix-section {
+.schedule-matrix-section {
       padding: 2rem 0 6rem 0;
    }
 
@@ -681,9 +685,11 @@ button {
     padding: 0.2rem 0.9rem;
 }
 
-/* Filter Bar Structural Updates */
+/* ============================================================
+   10d. GAMES FILTER BAR
+   ============================================================ */
 .filter-section {
-    padding: 0; 
+    padding: 0;
     margin-bottom: 3rem;
 }
 
@@ -714,7 +720,6 @@ button {
     color: var(--bg-dark);
 }
 
-/* Micro-Typographic Layout Dividers */
 .matchup-vs-divider {
     color: var(--fg-muted); 
     font-weight: 400; 
@@ -723,11 +728,9 @@ button {
     font-size: 1.1rem; 
     padding: 0 0.2rem;
 }
-  /* ==========================================================================
-   10c. GAMES HERO & MINIDASHBOARD WIDGET
-   ========================================================================== */
-
-/* 1. Hero Layout Wrapper */
+/* ============================================================
+   10c. GAMES HERO & MINIDASHBOARD
+   ============================================================ */
 .games-hero {
     display: flex;
     justify-content: space-between;
@@ -744,7 +747,6 @@ button {
     max-width: 600px;
 }
 
-/* 2. Left Column Typography */
 .live-subtitle {
     font-family: var(--f-mono);
     color: var(--neon-red);
@@ -775,7 +777,6 @@ button {
     margin: 0;
 }
 
-/* 3. Right Column: Minidashboard Container Card */
 .minidashboard {
     background-color: var(--bg-dark); /* Blends perfectly with your brand layout */
     border: 1px solid var(--line);
@@ -784,7 +785,6 @@ button {
     min-width: 380px;
 }
 
-/* 4. Dashboard Header Meta Row */
 .dashboard-header {
     display: flex;
     justify-content: space-between;
@@ -812,7 +812,6 @@ button {
     animation: pulse 2s infinite;
 }
 
-/* 5. Metrics Grid */
 .dashboard-stats-row {
     display: flex;
     justify-content: space-between;
@@ -975,7 +974,6 @@ button {
    transform: translateX(3px);
 }
 
-/* Right Card Framework stretched seamlessly */
 .featured-dish-card {
    background-color: #0c0907;
    border: 1px solid var(--line);
@@ -1187,7 +1185,6 @@ button {
    text-transform: uppercase;
 }
 
-/* Private Events Base Structure */
 .private-events-section {
    padding: 0 2rem 6rem 2rem;
    background-color: var(--bg-dark);
@@ -1256,7 +1253,6 @@ button {
    color: var(--accent);
 }
 
-/* Premium Image Wrap Container */
 .events-banner-image-wrap {
    width: 100%;
    height: 380px; 
@@ -1274,7 +1270,6 @@ button {
    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Scale effect connected to parent box active state */
 .events-banner-card:hover .events-banner-img {
    transform: scale(1.04);
 }
@@ -1659,10 +1654,9 @@ footer {
          text-align: left;
       }
    }
-/* ==========================================================================
-   STATE CLASSES (JavaScript Toggles)
-   ========================================================================== */
-
-   .menu-item-row.is-hidden, .menu-category-block.is-hidden {
+/* ============================================================
+   19. STATE CLASSES
+   ============================================================ */
+.menu-item-row.is-hidden, .menu-category-block.is-hidden {
       display: none !important;
    }
