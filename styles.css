@@ -537,7 +537,323 @@ button {
    color: var(--fg-text);
    width: 100%;
 }
+/* ============================================================
+   10b. GAMES GRID MATRIX LAYOUT
+   ============================================================ */
+   .schedule-matrix-section {
+      padding: 2rem 0 6rem 0;
+   }
 
+   .date-group-block {
+      margin-bottom: 4rem;
+   }
+
+   .date-group-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .date-title {
+      font-family: var(--f-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+   }
+
+   .game-count-label {
+      font-family: var(--f-mono);
+      font-size: 0.8rem;
+      color: var(--fg-muted);
+   }
+
+   .matrix-table-frame {
+      background-color:var(--bg-dark);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+   }
+
+   .matrix-header-row, .matrix-row {
+      display: grid;
+      grid-template-columns: 0.8fr 2.5fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      padding: 1.2rem 1.5rem
+   }
+
+   .matrix-header-row {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid var(--line);
+   }
+
+   .cdr-hdr {
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      color: var(--fg-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+
+   .matrix-row {
+      border-bottom: 1px dashed var(--line);
+   }
+
+   .matrix-row:last-child {
+      border-bottom: none;
+   }
+
+   .sports-badge {
+      font-family: var(--f-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      border: 1px solid rgba(255, 176, 32, 0.3);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+   }
+
+   .col-data-matchup {
+      font-family: var(--f-display);
+      font-size: 1.rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px
+   }
+
+   .col-data-time, .col-data-tv, .col-data-zone {
+      font-family: var(--f-mono);
+      font-size: 0.9rem;
+      color: var(--fg-text);
+   }
+
+   .col-data-tv {
+      color: var(--accent);
+      font-weight: 600;
+   }
+
+   .col-daa-zone {
+      text-transform: uppercase;
+   }
+
+   .status-badge-live {
+      font-family: var(--f-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--neon-red);
+      border: 1px solid var(--neon-red);
+      background-color: var(--neon-red-bg);
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      display: inline-block;
+   }
+
+   .col-data-status {
+      font-family: var(--f-mono);
+      font-size: 0.85rem;
+      color: var(--fg-muted);
+      text-transform: uppercase;
+   }
+
+   .sport-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Typography matching your exact matrix data size */
+    font-family: var(--f-mono, monospace);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--fg-muted, #a3a3a3);
+    
+    /* Capsule Frame Construction */
+    padding: 0.25rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Soft, non-distracting border line */
+    border-radius: 100px; /* Forces standard rounded capsule look */
+    background-color: rgba(255, 255, 255, 0.02); /* Very subtle depth fill */
+    
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    padding: 0.2rem 0.9rem;
+}
+
+/* Filter Bar Structural Updates */
+.filter-section {
+    padding: 0; 
+    margin-bottom: 3rem;
+}
+
+.filter-section-wrapper {
+    display: flex; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.day-filters {
+    flex: 1; 
+    min-width: 300px; 
+    justify-content: flex-start; 
+    gap: 1rem;
+}
+
+.sport-filters {
+    flex: 1.2; 
+    min-width: 350px; 
+    justify-content: flex-start; 
+    gap: 1rem;
+}
+
+/* Active Highlight Hook */
+.filter-btn.active-filter {
+    background-color: var(--accent); 
+    color: var(--bg-dark);
+}
+
+/* Micro-Typographic Layout Dividers */
+.matchup-vs-divider {
+    color: var(--fg-muted); 
+    font-weight: 400; 
+    font-family: var(--f-body, sans-serif); 
+    font-style: italic; 
+    font-size: 1.1rem; 
+    padding: 0 0.2rem;
+}
+  /* ==========================================================================
+   10c. GAMES HERO & MINIDASHBOARD WIDGET
+   ========================================================================== */
+
+/* 1. Hero Layout Wrapper */
+.games-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 4rem 2rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.games-hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* 2. Left Column Typography */
+.live-subtitle {
+    font-family: var(--f-mono);
+    color: var(--neon-red);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.games-title {
+    font-family: var(--f-display);
+    font-size: clamp(4rem, 7vw, 6rem);
+    font-weight: 900;
+    color: var(--fg); /* Inherits your main off-white site brand color */
+    margin: 0 0 1.5rem 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.games-description {
+    font-family: var(--f-body);
+    color: var(--fg-text);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 3. Right Column: Minidashboard Container Card */
+.minidashboard {
+    background-color: var(--bg-dark); /* Blends perfectly with your brand layout */
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    min-width: 380px;
+}
+
+/* 4. Dashboard Header Meta Row */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.panel-tag {
+    font-family: var(--f-mono);
+    color: var(--accent-yellow-neon);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.panel-live-status {
+    font-family: var(--f-mono);
+    color: var(--neon-red); 
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: pulse 2s infinite;
+}
+
+/* 5. Metrics Grid */
+.dashboard-stats-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.mini-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.mini-stat-label {
+    font-family: var(--f-mono);
+    color: var(--fg-muted);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.mini-stat-value {
+    font-family: var(--f-display);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--fg);
+}
+
+/* Glowing Accent utility */
+.neon-amber {
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(245, 185, 66, 0.2);
+}
+
+/* Live Blink Animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
 /* ============================================================
    11. WEEKLY LINEUP & FEATURED (Locked To Equal Height)
    ============================================================ */
@@ -550,7 +866,7 @@ button {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 2rem;
-   align-items: stretch; /* Forces left card and right product card to match exactly */
+   align-items: stretch; 
 }
 
 .lineup-card {
@@ -692,7 +1008,7 @@ button {
    padding: 3.5rem 3rem;
    display: flex;
    flex-direction: column;
-   flex-grow: 1; /* Pushes child elements down into space */
+   flex-grow: 1; 
 }
 
 .dish-badge {
@@ -1166,8 +1482,9 @@ footer {
    .filter-buttons {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
-      flex-wrap: wrap;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
    }
 
    .filter-title-label {
@@ -1184,12 +1501,13 @@ footer {
       color: var(-fg-text);
       font-family: var(--f-display);
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.8rem;
       letter-spacing: 0.5px;
-      padding: 0.4rem 1.2rem;
+      padding: 0.35rem 0.75rem;
       border-radius: 6px;
       text-transform: uppercase;
       transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      white-space: nowrap;
    }
 
    .filter-btn:hover {
