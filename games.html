@@ -17,10 +17,10 @@
 
     <nav class="navbar">
         <div class="logo">
-            <div class="logo-mark">PB</div>
-            <div>
-                <div class="logo-name">THE PRESS BOX</div>
-                <div class="logo-sub">SPORTS BAR • KITCHEN • EST. 1994</div>
+            <div class="logo-mark">SB</div>
+            <div class="logo-text">
+                <div class="logo-name">THE SPORTS BAR CO.</div>
+                <div class="logo-sub">SPORTS BAR · KITCHEN · EST. 1994</div>
             </div>
         </div>
         <ul class="nav-links">
@@ -37,185 +37,244 @@
 
     <main>
 
-    <section class="games-hero">
-        <div class="games-hero-content">
-            <span class="live-subtitle">Live • On the TVs</span>
-            <h1 class="games-title">What's On.</h1>
-            <p class="games-description">Every game, mapped to every screen. We'll move a game for you — just ask the manager. (Yes, really.)</p>
+        <section class="games-hero">
+            <div class="games-hero-content">
+                <span class="live-subtitle">Live • On the TVs</span>
+                <h1 class="games-title">What's On.</h1>
+                <p class="games-description">Every game, mapped to every screen. We'll move a game for you — just ask
+                    the manager. (Yes, really.)</p>
+            </div>
+
+            <div class="minidashboard">
+                <div class="dashboard-header">
+                    <span class="panel-tag">Right Now</span>
+                    <span class="panel-live-status">● Live</span>
+                </div>
+                <div class="dashboard-stats-row">
+                    <div class="mini-stat">
+                        <span class="mini-stat-label">Games Live</span>
+                        <span class="mini-stat-value neon-amber">14</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-label">Upcoming</span>
+                        <span class="mini-stat-value">8</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-label">Next Tip</span>
+                        <span class="mini-stat-value">22 Min</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTER SECTION CLEANED EXTENSION -->
+        <section class="filter-section">
+            <div class="filter-section-wrapper">
+
+                <div class="filter-bar-container day-filters">
+                    <span class="filter-title-label">Day</span>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active-filter">All</button>
+                        <button class="filter-btn">Tue</button>
+                        <button class="filter-btn">Wed</button>
+                        <button class="filter-btn">Thu</button>
+                        <button class="filter-btn">Fri</button>
+                        <button class="filter-btn">Sat</button>
+                        <button class="filter-btn">Sun</button>
+                    </div>
+                </div>
+
+                <div class="filter-bar-container sport-filters">
+                    <span class="filter-title-label">Sport</span>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active-filter">All</button>
+                        <button class="filter-btn">NBA</button>
+                        <button class="filter-btn">NHL</button>
+                        <button class="filter-btn">NCAA</button>
+                        <button class="filter-btn">MLS</button>
+                        <button class="filter-btn">UFC</button>
+                        <button class="filter-btn">F1</button>
+                        <button class="filter-btn">Prem</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="schedule-matrix-section">
+
+            <!-- TUESDAY GROUP -->
+            <div class="date-group-block">
+                <div class="date-group-header">
+                    <h2 class="date-title">Tue • Mar 4</h2>
+                    <span class="game-count-label">5 Games</span>
+                </div>
+
+                <div class="matrix-table-frame">
+                    <div class="matrix-header-row">
+                        <span class="col-hdr">Sport</span>
+                        <span class="col-hdr">Matchup</span>
+                        <span class="col-hdr">Time</span>
+                        <span class="col-hdr">TV</span>
+                        <span class="col-hdr">Zone</span>
+                        <span class="col-hdr">Status</span>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge nba">NBA</span></div>
+                        <div class="col-data-matchup">CELTICS <span class="matchup-vs-divider">@</span> BULLS</div>
+                        <div class="col-data-time">7:30P</div>
+                        <div class="col-data-tv">📺 CH 4</div>
+                        <div class="col-data-zone">Main</div>
+                        <div><span class="status-badge-live">● 64 - 58</span></div>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge nhl">NHL</span></div>
+                        <div class="col-data-matchup">WILD <span class="matchup-vs-divider">@</span> BLACKHAWKS</div>
+                        <div class="col-data-time">8:00P</div>
+                        <div class="col-data-tv">📺 CH 7</div>
+                        <div class="col-data-zone">Mezz</div>
+                        <div><span class="status-badge-live">● 2 - 1</span></div>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge ncaa">NCAA</span></div>
+                        <div class="col-data-matchup">PURDUE <span class="matchup-vs-divider">@</span> ILLINI</div>
+                        <div class="col-data-time">9:00P</div>
+                        <div class="col-data-tv">📺 CH 12</div>
+                        <div class="col-data-zone">Top</div>
+                        <div class="col-data-status">Upcoming</div>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge mls">MLS</span></div>
+                        <div class="col-data-matchup">LAFC <span class="matchup-vs-divider">@</span> FIRE</div>
+                        <div class="col-data-time">9:30P</div>
+                        <div class="col-data-tv">📺 CH 19</div>
+                        <div class="col-data-zone">Bar</div>
+                        <div class="col-data-status">Upcoming</div>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge nba">NBA</span></div>
+                        <div class="col-data-matchup">WARRIORS <span class="matchup-vs-divider">@</span> LAKERS</div>
+                        <div class="col-data-time">10:00P</div>
+                        <div class="col-data-tv">📺 CH 3</div>
+                        <div class="col-data-zone">Mezz</div>
+                        <div class="col-data-status">Upcoming</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEDNESDAY GROUP -->
+            <div class="date-group-block">
+                <div class="date-group-header">
+                    <h2 class="date-title">Wed • Mar 5</h2>
+                    <span class="game-count-label">3 Games</span>
+                </div>
+
+                <div class="matrix-table-frame">
+                    <div class="matrix-header-row">
+                        <span class="col-hdr">Sport</span>
+                        <span class="col-hdr">Matchup</span>
+                        <span class="col-hdr">Time</span>
+                        <span class="col-hdr">TV</span>
+                        <span class="col-hdr">Zone</span>
+                        <span class="col-hdr">Status</span>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge nba">NBA</span></div>
+                        <div class="col-data-matchup">BUCKS <span class="matchup-vs-divider">@</span> HEAT</div>
+                        <div class="col-data-time">7:00P</div>
+                        <div class="col-data-tv">📺 CH 8</div>
+                        <div class="col-data-zone">Main</div>
+                        <div class="col-data-status">Upcoming</div>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge nhl">NHL</span></div>
+                        <div class="col-data-matchup">RANGERS <span class="matchup-vs-divider">@</span> BRUINS</div>
+                        <div class="col-data-time">7:00P</div>
+                        <div class="col-data-tv">📺 CH 11</div>
+                        <div class="col-data-zone">Mezz</div>
+                        <div class="col-data-status">Upcoming</div>
+                    </div>
+
+                    <div class="matrix-row">
+                        <div><span class="sport-badge ncaa">NCAA</span></div>
+                        <div class="col-data-matchup">KANSAS <span class="matchup-vs-divider">@</span> TEXAS</div>
+                        <div class="col-data-time">8:30P</div>
+                        <div class="col-data-tv">📺 CH 14</div>
+                        <div class="col-data-zone">Top</div>
+                        <div class="col-data-status">Upcoming</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <div class="logo">
+                    <div class="logo-mark">SB</div>
+                    <div class="logo-text">
+                        <div class="logo-name">THE SPORTS BAR CO.</div>
+                        <div class="logo-sub">SPORTS BAR · KITCHEN · EST. 1994</div>
+                    </div>
+                </div>
+                <p class="footer-desc">Three floors. Forty-eight screens. Every game, every night. A neighborhood
+                    institution since '94.</p>
+
+                <div class="social-links">
+                    <a href="#">IG</a>
+                    <a href="#">FB</a>
+                    <a href="#">X</a>
+                    <a href="#">YT</a>
+                    <a href="#">TT</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>VISIT</h3>
+                <p>321 Main St.<br>Anytown, MI 33333</p>
+                <p>(333) 333-3333</p>
+                <p><a href="mailto:hello@thepressbox.bar">hello@thesportsbar.bar</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>HOURS</h3>
+                <ul class="hours-list">
+                    <li><span>MON-THU</span> <span>11A - 1A</span></li>
+                    <li><span>FRI</span> <span>11A - 2A</span></li>
+                    <li><span>SAT</span> <span>11A - 2A</span></li>
+                    <li><span>SUN</span> <span>11A - 2A</span></li>
+                </ul>
+                <p class="kitchen-note">KITCHEN UNTIL 12A</p>
+
+            </div>
+            <div class="footer-column">
+                <h3>EXPLORE</h3>
+                <ul class="explore-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="reserve.html">Reserve</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="minidashboard">
-            <div class="dashboard-header">
-                <span class="panel-tag">Right Now</span>
-                <span class="panel-live-status">● Live</span>
-            </div>
-            <div class="dashboard-stats-row">
-                <div class="mini-stat">
-                    <span class="mini-stat-label">Games Live</span>
-                    <span class="mini-stat-value neon-amber">14</span>
-                </div>
-                <div class="mini-stat">
-                    <span class="mini-stat-label">Upcoming</span>
-                    <span class="mini-stat-value">8</span>
-                </div>
-                <div class="mini-stat">
-                    <span class="mini-stat-label">Next Tip</span>
-                    <span class="mini-stat-value">22 Min</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FILTER SECTION CLEANED EXTENSION -->
-    <section class="filter-section">
-        <div class="filter-section-wrapper">
-
-            <div class="filter-bar-container day-filters">
-                <span class="filter-title-label">Day</span>
-                <div class="filter-buttons">
-                    <button class="filter-btn active-filter">All</button>
-                    <button class="filter-btn">Tue</button>
-                    <button class="filter-btn">Wed</button>
-                    <button class="filter-btn">Thu</button>
-                    <button class="filter-btn">Fri</button>
-                    <button class="filter-btn">Sat</button>
-                    <button class="filter-btn">Sun</button>
-                </div>
-            </div>
-
-            <div class="filter-bar-container sport-filters">
-                <span class="filter-title-label">Sport</span>
-                <div class="filter-buttons">
-                    <button class="filter-btn active-filter">All</button>
-                    <button class="filter-btn">NBA</button>
-                    <button class="filter-btn">NHL</button>
-                    <button class="filter-btn">NCAA</button>
-                    <button class="filter-btn">MLS</button>
-                    <button class="filter-btn">UFC</button>
-                    <button class="filter-btn">F1</button>
-                    <button class="filter-btn">Prem</button>
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>© 2026 THE SPORTS BAR HOSPITALITY GROUP</p>
+            <p>DRINK RESPONSIBLY · 21+ AFTER 9PM</p>
 
         </div>
-    </section>
-
-    <section class="schedule-matrix-section">
-        
-        <!-- TUESDAY GROUP -->
-        <div class="date-group-block">
-            <div class="date-group-header">
-                <h2 class="date-title">Tue • Mar 4</h2>
-                <span class="game-count-label">5 Games</span>
-            </div>
-
-            <div class="matrix-table-frame">
-                <div class="matrix-header-row">
-                    <span class="col-hdr">Sport</span>
-                    <span class="col-hdr">Matchup</span>
-                    <span class="col-hdr">Time</span>
-                    <span class="col-hdr">TV</span>
-                    <span class="col-hdr">Zone</span>
-                    <span class="col-hdr">Status</span>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge nba">NBA</span></div>
-                    <div class="col-data-matchup">CELTICS <span class="matchup-vs-divider">@</span> BULLS</div>
-                    <div class="col-data-time">7:30P</div>
-                    <div class="col-data-tv">📺 CH 4</div>
-                    <div class="col-data-zone">Main</div>
-                    <div><span class="status-badge-live">● 64 - 58</span></div>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge nhl">NHL</span></div>
-                    <div class="col-data-matchup">WILD <span class="matchup-vs-divider">@</span> BLACKHAWKS</div>
-                    <div class="col-data-time">8:00P</div>
-                    <div class="col-data-tv">📺 CH 7</div>
-                    <div class="col-data-zone">Mezz</div>
-                    <div><span class="status-badge-live">● 2 - 1</span></div>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge ncaa">NCAA</span></div>
-                    <div class="col-data-matchup">PURDUE <span class="matchup-vs-divider">@</span> ILLINI</div>
-                    <div class="col-data-time">9:00P</div>
-                    <div class="col-data-tv">📺 CH 12</div>
-                    <div class="col-data-zone">Top</div>
-                    <div class="col-data-status">Upcoming</div>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge mls">MLS</span></div>
-                    <div class="col-data-matchup">LAFC <span class="matchup-vs-divider">@</span> FIRE</div>
-                    <div class="col-data-time">9:30P</div>
-                    <div class="col-data-tv">📺 CH 19</div>
-                    <div class="col-data-zone">Bar</div>
-                    <div class="col-data-status">Upcoming</div>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge nba">NBA</span></div>
-                    <div class="col-data-matchup">WARRIORS <span class="matchup-vs-divider">@</span> LAKERS</div>
-                    <div class="col-data-time">10:00P</div>
-                    <div class="col-data-tv">📺 CH 3</div>
-                    <div class="col-data-zone">Mezz</div>
-                    <div class="col-data-status">Upcoming</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- WEDNESDAY GROUP -->
-        <div class="date-group-block">
-            <div class="date-group-header">
-                <h2 class="date-title">Wed • Mar 5</h2>
-                <span class="game-count-label">3 Games</span>
-            </div>
-
-            <div class="matrix-table-frame">
-                <div class="matrix-header-row">
-                    <span class="col-hdr">Sport</span>
-                    <span class="col-hdr">Matchup</span>
-                    <span class="col-hdr">Time</span>
-                    <span class="col-hdr">TV</span>
-                    <span class="col-hdr">Zone</span>
-                    <span class="col-hdr">Status</span>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge nba">NBA</span></div>
-                    <div class="col-data-matchup">BUCKS <span class="matchup-vs-divider">@</span> HEAT</div>
-                    <div class="col-data-time">7:00P</div>
-                    <div class="col-data-tv">📺 CH 8</div>
-                    <div class="col-data-zone">Main</div>
-                    <div class="col-data-status">Upcoming</div>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge nhl">NHL</span></div>
-                    <div class="col-data-matchup">RANGERS <span class="matchup-vs-divider">@</span> BRUINS</div>
-                    <div class="col-data-time">7:00P</div>
-                    <div class="col-data-tv">📺 CH 11</div>
-                    <div class="col-data-zone">Mezz</div>
-                    <div class="col-data-status">Upcoming</div>
-                </div>
-
-                <div class="matrix-row">
-                    <div><span class="sport-badge ncaa">NCAA</span></div>
-                    <div class="col-data-matchup">KANSAS <span class="matchup-vs-divider">@</span> TEXAS</div>
-                    <div class="col-data-time">8:30P</div>
-                    <div class="col-data-tv">📺 CH 14</div>
-                    <div class="col-data-zone">Top</div>
-                    <div class="col-data-status">Upcoming</div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-</main>
-
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

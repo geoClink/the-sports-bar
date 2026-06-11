@@ -1429,6 +1429,10 @@ footer {
       padding: 4rem 2rem 1rem 2rem;
       max-width: 1200px;
       margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 4rem;
    }
 
    .menu-hero-content .menu-tag {
@@ -1451,6 +1455,56 @@ footer {
       color: var(--fg-text);
       max-width: 550px;
       font-size: 0.95rem;
+   }
+
+   .kitchen-status-card {
+      background-color: var(--bg-dark);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 2rem;
+      min-width: 320px;
+   }
+
+   .status-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .status-label-main {
+      font-family: var(--f-mono);
+      font-size: 0.8rem;
+      color: var(--fg-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+   }
+
+   .status-pill-open {
+      color: var(--diet-veg);
+      border: 1px solid var(--diet-veg);
+      border-radius: 20px;
+      padding: 0.25rem 1rem;
+      font-family: var(--f-mono);
+      font-size: 0.8rem;
+   }
+
+   .status-times-grid {
+      display: flex;
+      gap: 1rem;
+      padding-top: 1rem;
+   }
+
+   .status-time-label {
+      font-family: var(--f-mono);
+      font-size: 0.8rem;
+      color: var(--fg-muted);
+      text-transform: uppercase;
+   }
+
+   .status-time-value {
+      font-family: var(--f-display);
+      font-size: 2rem;
+      font-weight: 800;
    }
 
 /* ============================================================
