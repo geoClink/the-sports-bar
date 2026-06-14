@@ -4,17 +4,17 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     /* ==========================================================================
        1. Dynamic Day Highlighting for The Lineup
        ========================================================================== */
     const highlightCurrentDay = () => {
         // Get current day index (0 = Sunday, 1 = Monday, etc.)
         const dayIndex = new Date().getDay();
-        
+
         // Normalize index to match HTML list structure (Mon = 1, Tue = 2 ... Sun = 7)
         const normalizedIndex = dayIndex === 0 ? 7 : dayIndex;
-        
+
         // Find today's row and inject the active class
         const todayRow = document.querySelector(`.lineup-item:nth-child(${normalizedIndex}) .lineup-link`);
         if (todayRow) {
