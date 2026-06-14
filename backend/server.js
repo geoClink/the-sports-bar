@@ -3,10 +3,11 @@ const app = express();
 const path = require('path');
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, 'frontend')));
+// Serve static files from the frontend directory
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+    res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
 app.listen(port, () => {
