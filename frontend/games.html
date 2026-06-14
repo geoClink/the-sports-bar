@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Press Box — Games</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -67,154 +67,37 @@
             </div>
         </section>
 
-        <!-- FILTER SECTION CLEANED EXTENSION -->
+        <!-- FILTER SECTION -->
         <section class="filter-section">
             <div class="filter-section-wrapper">
 
                 <div class="filter-bar-container day-filters">
                     <span class="filter-title-label">Day</span>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active-filter">All</button>
-                        <button class="filter-btn">Tue</button>
-                        <button class="filter-btn">Wed</button>
-                        <button class="filter-btn">Thu</button>
-                        <button class="filter-btn">Fri</button>
-                        <button class="filter-btn">Sat</button>
-                        <button class="filter-btn">Sun</button>
-                    </div>
+                    <div class="filter-buttons" id="day-filter-buttons"></div>
                 </div>
 
+                <!-- TARGETED CHANNELS ONLY -->
                 <div class="filter-bar-container sport-filters">
                     <span class="filter-title-label">Sport</span>
                     <div class="filter-buttons">
                         <button class="filter-btn active-filter">All</button>
+                        <button class="filter-btn">MLB</button>
                         <button class="filter-btn">NBA</button>
                         <button class="filter-btn">NHL</button>
-                        <button class="filter-btn">NCAA</button>
-                        <button class="filter-btn">MLS</button>
-                        <button class="filter-btn">UFC</button>
-                        <button class="filter-btn">F1</button>
-                        <button class="filter-btn">Prem</button>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- SCHEDULE MATRIX SECTION -->
         <section class="schedule-matrix-section">
-
-            <!-- TUESDAY GROUP -->
-            <div class="date-group-block">
-                <div class="date-group-header">
-                    <h2 class="date-title">Tue • Mar 4</h2>
-                    <span class="game-count-label">5 Games</span>
-                </div>
-
-                <div class="matrix-table-frame">
-                    <div class="matrix-header-row">
-                        <span class="col-hdr">Sport</span>
-                        <span class="col-hdr">Matchup</span>
-                        <span class="col-hdr">Time</span>
-                        <span class="col-hdr">TV</span>
-                        <span class="col-hdr">Zone</span>
-                        <span class="col-hdr">Status</span>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge nba">NBA</span></div>
-                        <div class="col-data-matchup">CELTICS <span class="matchup-vs-divider">@</span> BULLS</div>
-                        <div class="col-data-time">7:30P</div>
-                        <div class="col-data-tv">📺 CH 4</div>
-                        <div class="col-data-zone">Main</div>
-                        <div><span class="status-badge-live">● 64 - 58</span></div>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge nhl">NHL</span></div>
-                        <div class="col-data-matchup">WILD <span class="matchup-vs-divider">@</span> BLACKHAWKS</div>
-                        <div class="col-data-time">8:00P</div>
-                        <div class="col-data-tv">📺 CH 7</div>
-                        <div class="col-data-zone">Mezz</div>
-                        <div><span class="status-badge-live">● 2 - 1</span></div>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge ncaa">NCAA</span></div>
-                        <div class="col-data-matchup">PURDUE <span class="matchup-vs-divider">@</span> ILLINI</div>
-                        <div class="col-data-time">9:00P</div>
-                        <div class="col-data-tv">📺 CH 12</div>
-                        <div class="col-data-zone">Top</div>
-                        <div class="col-data-status">Upcoming</div>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge mls">MLS</span></div>
-                        <div class="col-data-matchup">LAFC <span class="matchup-vs-divider">@</span> FIRE</div>
-                        <div class="col-data-time">9:30P</div>
-                        <div class="col-data-tv">📺 CH 19</div>
-                        <div class="col-data-zone">Bar</div>
-                        <div class="col-data-status">Upcoming</div>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge nba">NBA</span></div>
-                        <div class="col-data-matchup">WARRIORS <span class="matchup-vs-divider">@</span> LAKERS</div>
-                        <div class="col-data-time">10:00P</div>
-                        <div class="col-data-tv">📺 CH 3</div>
-                        <div class="col-data-zone">Mezz</div>
-                        <div class="col-data-status">Upcoming</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- WEDNESDAY GROUP -->
-            <div class="date-group-block">
-                <div class="date-group-header">
-                    <h2 class="date-title">Wed • Mar 5</h2>
-                    <span class="game-count-label">3 Games</span>
-                </div>
-
-                <div class="matrix-table-frame">
-                    <div class="matrix-header-row">
-                        <span class="col-hdr">Sport</span>
-                        <span class="col-hdr">Matchup</span>
-                        <span class="col-hdr">Time</span>
-                        <span class="col-hdr">TV</span>
-                        <span class="col-hdr">Zone</span>
-                        <span class="col-hdr">Status</span>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge nba">NBA</span></div>
-                        <div class="col-data-matchup">BUCKS <span class="matchup-vs-divider">@</span> HEAT</div>
-                        <div class="col-data-time">7:00P</div>
-                        <div class="col-data-tv">📺 CH 8</div>
-                        <div class="col-data-zone">Main</div>
-                        <div class="col-data-status">Upcoming</div>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge nhl">NHL</span></div>
-                        <div class="col-data-matchup">RANGERS <span class="matchup-vs-divider">@</span> BRUINS</div>
-                        <div class="col-data-time">7:00P</div>
-                        <div class="col-data-tv">📺 CH 11</div>
-                        <div class="col-data-zone">Mezz</div>
-                        <div class="col-data-status">Upcoming</div>
-                    </div>
-
-                    <div class="matrix-row">
-                        <div><span class="sport-badge ncaa">NCAA</span></div>
-                        <div class="col-data-matchup">KANSAS <span class="matchup-vs-divider">@</span> TEXAS</div>
-                        <div class="col-data-time">8:30P</div>
-                        <div class="col-data-tv">📺 CH 14</div>
-                        <div class="col-data-zone">Top</div>
-                        <div class="col-data-status">Upcoming</div>
-                    </div>
-                </div>
-            </div>
-
+            <!-- Dynamic data pipeline injection root -->
+            <div id="matrix-display-root"></div>
         </section>
+
     </main>
+
     <footer>
         <div class="footer-columns">
             <div class="footer-column">
@@ -267,13 +150,12 @@
             </div>
         </div>
 
-
         <div class="footer-bottom">
             <p>© 2026 THE SPORTS BAR HOSPITALITY GROUP</p>
             <p>DRINK RESPONSIBLY · 21+ AFTER 9PM</p>
-
         </div>
     </footer>
+
     <script src="js/main.js"></script>
     <script src="js/games.js"></script>
 </body>
