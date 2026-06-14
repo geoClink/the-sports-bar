@@ -1540,7 +1540,151 @@ footer {
       font-family: var(--f-mono);
       font-size: 0.75rem;
       color: var(--fg-muted);
-      letter-spacing: 1.5px;
+      letter-spacing: 1.5px;/* ==========================================================================
+   WINGS TO YOUR COUCH BANNER ENGINE (PROMO ARCHITECTURE)
+   ========================================================================== */
+.promo-banner-container {
+    padding: 0 2rem; /* Matches your main content alignment padding */
+    margin: 4rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.promo-banner-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #2d0e0a 0%, #1a0604 100%);
+    border: 1px solid #3d1510;
+    border-radius: 12px;
+    padding: 3rem 4rem;
+    position: relative;
+    overflow: hidden;
+    gap: 3rem;
+}
+
+/* Subtle diagonal stripe textures for UI depth */
+.promo-banner-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(0, 0, 0, 0.15) 10px,
+        rgba(0, 0, 0, 0.15) 20px
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Left Content Column */
+.promo-left-content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.promo-tagline {
+    font-family: var(--f-mono, 'JetBrains Mono', monospace);
+    color: var(--accent, #ffb300);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.promo-heading {
+    font-family: var(--f-display, 'Big Shoulders Display'), sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.01em;
+}
+
+.promo-text {
+    font-family: var(--f-body, 'DM Sans'), sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.05rem;
+    max-width: 460px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Right Action Buttons Column */
+.promo-action-buttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Primary Amber Order Button */
+.btn-promo-yellow {
+    display: inline-block;
+    background: var(--accent, #ffb300);
+    color: #000;
+    font-family: var(--f-display, 'Big Shoulders Display'), sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 20px rgba(255, 179, 0, 0.25);
+}
+
+.btn-promo-yellow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 25px rgba(255, 179, 0, 0.45);
+    background: #ffc124;
+}
+
+/* Dark Delivery Option Buttons */
+.btn-promo-dark {
+    display: inline-block;
+    background: rgba(18, 18, 18, 0.6);
+    color: #fff;
+    font-family: var(--f-display, 'Big Shoulders Display'), sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: 1rem 1.75rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn-promo-dark:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive collapse breakpoint for smaller displays */
+@media (max-width: 1024px) {
+    .promo-banner-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem;
+        gap: 2rem;
+    }
+    
+    .promo-action-buttons {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
       text-transform: uppercase;
    }
 
@@ -1580,6 +1724,7 @@ footer {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 2rem;
+      padding-bottom: 5rem;
    }
 
    .menu-category-block {
@@ -1690,7 +1835,153 @@ footer {
 
    .text-veg { color: var(--diet-veg); }
    .text-gf { color: var(--diet-gf); }
+   
 
+   /* ==========================================================================
+   WINGS TO YOUR COUCH BANNER ENGINE (PROMO ARCHITECTURE)
+   ========================================================================== */
+.promo-banner-container {
+    padding: 0 2rem; /* Matches your main content alignment padding */
+    margin: 4rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.promo-banner-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #2d0e0a 0%, #1a0604 100%);
+    border: 1px solid #3d1510;
+    border-radius: 12px;
+    padding: 3rem 4rem;
+    position: relative;
+    overflow: hidden;
+    gap: 3rem;
+}
+
+/* Subtle diagonal stripe textures for UI depth */
+.promo-banner-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(0, 0, 0, 0.15) 10px,
+        rgba(0, 0, 0, 0.15) 20px
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Left Content Column */
+.promo-left-content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.promo-tagline {
+    font-family: var(--f-mono, 'JetBrains Mono', monospace);
+    color: var(--accent, #ffb300);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.promo-heading {
+    font-family: var(--f-display, 'Big Shoulders Display'), sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.01em;
+}
+
+.promo-text {
+    font-family: var(--f-body, 'DM Sans'), sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.05rem;
+    max-width: 460px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Right Action Buttons Column */
+.promo-action-buttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Primary Amber Order Button */
+.btn-promo-yellow {
+    display: inline-block;
+    background: var(--accent, #ffb300);
+    color: #000;
+    font-family: var(--f-display, 'Big Shoulders Display'), sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 20px rgba(255, 179, 0, 0.25);
+}
+
+.btn-promo-yellow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 25px rgba(255, 179, 0, 0.45);
+    background: #ffc124;
+}
+
+/* Dark Delivery Option Buttons */
+.btn-promo-dark {
+    display: inline-block;
+    background: rgba(18, 18, 18, 0.6);
+    color: #fff;
+    font-family: var(--f-display, 'Big Shoulders Display'), sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: 1rem 1.75rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn-promo-dark:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive collapse breakpoint for smaller displays */
+@media (max-width: 1024px) {
+    .promo-banner-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem;
+        gap: 2rem;
+    }
+    
+    .promo-action-buttons {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
 /* ============================================================
    18. MENU MOBILE RESPONSIVE
    ============================================================ */
