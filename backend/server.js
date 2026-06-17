@@ -14,10 +14,10 @@ const NBA_CONFIG = {
 };
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../docs')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend', 'games.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'games.html'));
 });
 
 app.get('/api/v1/games', async (req, res) => {
