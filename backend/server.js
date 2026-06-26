@@ -2,10 +2,9 @@
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
-const path = require('path'); 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3003;
 
 const NBA_CONFIG = {
     champion: "TBD",        // update after Finals (e.g. "Oklahoma City Thunder")
@@ -14,11 +13,6 @@ const NBA_CONFIG = {
 };
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../docs')));
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../docs', 'games.html'));
-});
 
 app.get('/api/v1/games', async (req, res) => {
     const requestedSport = req.query.sport;
@@ -135,6 +129,10 @@ app.get('/api/v1/games', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`🚀 Sports Bar Core active on http://localhost:${port}`);
-});
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Sports Bar Core active on http://localhost:${port}`);
+    });
+}
+
+module.exports = app;
