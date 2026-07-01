@@ -66,7 +66,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
+    /* ==========================================================================
+       3. Mobile Navigation Toggle
+       ========================================================================== */
+    const initMobileNav = () => {
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (!toggle || !navLinks) return;
+
+        toggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('is-open');
+            toggle.textContent = isOpen ? '✕' : '☰';
+            toggle.setAttribute('aria-expanded', String(isOpen));
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                navLinks.classList.remove('is-open');
+                toggle.textContent = '☰';
+                toggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+    };
+
     // Initialize all UI modules
     highlightCurrentDay();
     initializeMenuFilters();
+    initMobileNav();
 });

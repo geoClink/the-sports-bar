@@ -1398,29 +1398,181 @@ footer {
 /* ============================================================
    13. RESPONSIVE
    ============================================================ */
-@media (max-width: 960px) {
-   .hero {
-      flex-direction: column;
-   }
-   .game-grid {
-      grid-template-columns: repeat(2, 1fr);
-   }
-   .lineup-grid {
-      grid-template-columns: 1fr;
-   }
+
+/* Remove blue tap flash on iOS */
+a, button { -webkit-tap-highlight-color: transparent; }
+
+/* Hamburger toggle — hidden on desktop */
+.nav-toggle {
+   display: none;
+   background: none;
+   border: 1px solid var(--line);
+   color: var(--fg);
+   width: 40px;
+   height: 40px;
+   border-radius: 6px;
+   font-size: 1.2rem;
+   cursor: pointer;
+   margin-left: auto;
+   flex-shrink: 0;
+   align-items: center;
+   justify-content: center;
 }
 
-@media (max-width: 600px) {
-   .game-grid, .footer-columns {
-      grid-template-columns: 1fr;
+/* Tablet */
+@media (max-width: 960px) {
+   .hero { flex-direction: column; }
+   .game-grid { grid-template-columns: repeat(2, 1fr); }
+   .lineup-grid { grid-template-columns: 1fr; }
+   .big-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+   .events-banner-card { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem; }
+   .events-banner-image-wrap { height: 300px; }
+}
+
+/* iPhone / mobile */
+@media (max-width: 768px) {
+
+   /* Safe areas for notch and home bar */
+   .navbar {
+      padding: 0.875rem max(1.25rem, env(safe-area-inset-left));
+      padding-right: max(1.25rem, env(safe-area-inset-right));
    }
+
+   /* Show hamburger button */
+   .nav-toggle { display: flex; }
+
+   /* Hide the live pill (saves space in tight header) */
+   .live-indicator { display: none; }
+
+   /* Full-screen nav overlay */
    .nav-links {
-      display: none; 
+      position: fixed;
+      inset: 0;
+      background-color: rgba(13, 9, 7, 0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 999;
+      margin-left: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
    }
-   .events-buttons {
+
+   .nav-links.is-open {
+      display: flex;
+      opacity: 1;
+      pointer-events: auto;
+   }
+
+   .nav-links a {
+      font-size: 2rem;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+   }
+
+   /* Hero */
+   .hero { flex-direction: column; padding: 2rem 1.25rem; gap: 1.5rem; }
+   .hero-visuals { display: none; }
+   .hero h1 { font-size: clamp(3rem, 16vw, 5rem); }
+
+   .hero-buttons {
       flex-direction: column;
       align-items: stretch;
+      gap: 0.75rem;
    }
+
+   .hero-buttons a {
+      text-align: center;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* Dashboard stats: 2×2 on mobile */
+   .dashboard-stats {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+      gap: 1rem;
+      padding: 1rem;
+   }
+
+   /* Schedule section */
+   .schedule-section { padding: 2rem 1.25rem; }
+   .schedule-section h2 { font-size: 2.5rem; }
+   .game-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+   /* Lineup */
+   .lineup-featured-section { padding: 0 1.25rem 3rem; }
+   .lineup-card { padding: 2rem 1.5rem; }
+   .lineup-main-title { font-size: 3rem; margin-bottom: 2rem; }
+   .dish-image-container { height: 220px; }
+   .dish-info-content { padding: 2rem 1.5rem; }
+   .dish-title { font-size: 2.2rem; }
+
+   /* Big stats */
+   .features-stats-section { padding: 3rem 1.25rem; }
+   .big-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+
+   /* Events banner */
+   .private-events-section { padding: 0 1.25rem 3rem; }
+   .events-banner-card { grid-template-columns: 1fr; padding: 2rem 1.25rem; gap: 1.5rem; }
+   .events-banner-image-wrap { height: 220px; }
+   .events-buttons { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+   .events-buttons .btn {
+      text-align: center;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* Games page */
+   .games-hero { flex-direction: column; gap: 1.5rem; padding: 2rem 1.25rem; }
+   .minidashboard { min-width: unset; width: 100%; }
+   .schedule-matrix-section { padding: 1rem 1.25rem 4rem; }
+
+   /* Matrix table scrolls horizontally */
+   .matrix-table-frame { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+   .matrix-header-row, .matrix-row { min-width: 560px; }
+
+   /* Games filters */
+   .filter-section-wrapper { flex-direction: column; }
+   .day-filters, .sport-filters { min-width: unset; width: 100%; }
+   .filter-buttons { flex-wrap: wrap; }
+
+   /* Promo banner */
+   .promo-banner-card { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; gap: 1.5rem; }
+   .promo-heading { font-size: 2.5rem; }
+   .promo-action-buttons { flex-direction: column; width: 100%; }
+   .btn-promo-yellow, .btn-promo-dark {
+      width: 100%;
+      text-align: center;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* Footer */
+   footer { padding: 2.5rem 1.25rem max(1.5rem, env(safe-area-inset-bottom, 0)); }
+   .footer-columns { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+   .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+
+   /* Menu page */
+   .menu-hero-section { flex-direction: column; padding: 2rem 1.25rem 1rem; gap: 1.5rem; }
+   .kitchen-status-card { min-width: unset; width: 100%; }
+   .filter-section { padding: 0 1.25rem; margin-bottom: 2rem; }
+   .filter-bar-container { flex-wrap: wrap; gap: 0.75rem; }
+   main { padding: 0 1.25rem; padding-bottom: 3rem; }
+   .menu-products-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+   .category-header-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+   .category-description { text-align: left; }
 }
 
 /* ============================================================
@@ -1983,23 +2135,7 @@ footer {
         flex-wrap: wrap;
     }
 }
-/* ============================================================
-   18. MENU MOBILE RESPONSIVE
-   ============================================================ */
-   @media (max-width: 820px) {
-      .menu-products-grid {
-         grid-template-columns: 1fr;
-         gap: 2rem;
-      }
-      .category-header-row {
-         flex-direction: column;
-         align-items: flex-start;
-         gap: 0.5rem;
-      }
-      .category-description {
-         text-align: left;
-      }
-   }
+/* Section 18 merged into section 13 responsive block */
 /* ============================================================
    19. STATE CLASSES
    ============================================================ */
