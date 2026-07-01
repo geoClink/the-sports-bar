@@ -104,7 +104,7 @@ button {
 .logo {
    display: flex;
    align-items: center;
-   gap: 0.75rem;
+   gap: 1rem;
 }
 
 .logo-mark {
@@ -174,10 +174,10 @@ button {
 .live-indicator {
    display: flex;
    align-items: center;
-   gap: 0.4rem;
+   gap: 0.5rem;
    background-color: var(--neon-red-bg);
    border: 1px solid var(--neon-red);
-   padding: 0.3rem 0.75rem;
+   padding: 0.5rem 1rem;
    border-radius: 20px;
    font-family: var(--f-mono);
    font-size: 0.75rem;
@@ -206,7 +206,7 @@ button {
    font-weight: 800;
    font-size: 1.1rem;
    letter-spacing: 0.5px;
-   padding: 0.75rem 1.5rem;
+   padding: 1rem 1.5rem;
    transition: all 0.2s ease;
 }
 
@@ -281,7 +281,7 @@ button {
 .hero-buttons {
    display: flex;
    align-items: center;
-   gap: 1.25rem;
+   gap: 1.5rem;
    margin-bottom: 2rem;
 }
 
@@ -291,7 +291,7 @@ button {
 
 .badges {
    display: flex;
-   gap: 0.75rem;
+   gap: 1rem;
    margin-bottom: 1.5rem;
 }
 
@@ -347,7 +347,7 @@ button {
    border: 1px solid var(--line);
    border-radius: 12px;
    margin: 2.5rem 0 0 0;
-   padding: 1.25rem 1.75rem;
+   padding: 1.5rem 2rem;
    gap: 1.5rem;
    max-width: 580px;
 }
@@ -387,8 +387,8 @@ button {
    border-top: 1px solid var(--line);
    border-bottom: 1px solid var(--line);
    overflow: hidden;
-   padding: 0.75rem 0;
-   margin: 0rem 0 2rem 0;
+   padding: 1rem 0;
+   margin: 0 0 2rem 0;
 }
 
 .ticker {
@@ -535,7 +535,7 @@ button {
    justify-content: space-between;
    align-items: center;
    border-top: 1px dashed var(--line);
-   padding-top: 1.25rem;
+   padding-top: 1.5rem;
    font-family: var(--f-mono);
    font-size: 0.8rem;
    color: var(--fg-text);
@@ -557,7 +557,7 @@ button {
       justify-content: space-between;
       align-items: flex-end;
       border-bottom: 1px solid var(--line);
-      padding-bottom: 0.75rem;
+      padding-bottom: 1rem;
       margin-bottom: 1.5rem;
    }
 
@@ -586,7 +586,7 @@ button {
       grid-template-columns: 0.8fr 2.5fr 1fr 1fr 1fr 1fr;
       align-items: center;
       gap: 1rem;
-      padding: 1.2rem 1.5rem
+      padding: 1.5rem
    }
 
    .matrix-header-row {
@@ -651,7 +651,7 @@ button {
       color: var(--neon-red);
       border: 1px solid var(--neon-red);
       background-color: var(--neon-red-bg);
-      padding: 0.25rem 0.75rem;
+      padding: 0.5rem 1rem;
       border-radius: 4px;
       display: inline-block;
    }
@@ -791,7 +791,7 @@ button {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--line);
-    padding-bottom: 0.75rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -893,7 +893,7 @@ button {
    font-size: 4.5rem;
    font-weight: 900;
    line-height: 0.95;
-   margin-top: 0.6rem;
+   margin-top: 0.5rem;
    margin-bottom: 3.5rem;
    color: #ffffff;
    text-transform: uppercase;
@@ -1024,7 +1024,7 @@ button {
    font-size: 3.2rem;
    font-weight: 900;
    line-height: 1;
-   margin-top: 0.6rem;
+   margin-top: 0.5rem;
    margin-bottom: 1.5rem;
    color: #ffffff;
    text-transform: uppercase;
@@ -1060,7 +1060,7 @@ button {
    font-weight: 900;
    font-size: 0.85rem;
    letter-spacing: 0.5px;
-   padding: 0.65rem 1.4rem;
+   padding: 0.5rem 1.5rem;
    border-radius: 6px;
    text-transform: uppercase;
 }
@@ -1217,7 +1217,7 @@ button {
    font-weight: 900;
    line-height: 1.05;
    color: #ffffff;
-   margin-top: 0.75rem;
+   margin-top: 1rem;
    text-transform: uppercase;
 }
 
@@ -1241,7 +1241,7 @@ button {
    border-radius: 6px;
    font-size: 0.95rem;
    font-weight: 800;
-   padding: 0.85rem 1.75rem;
+   padding: 1rem 2rem;
 }
 
 .events-buttons .btn-outline {
@@ -1310,7 +1310,7 @@ footer {
    font-size: 1.1rem;
    color: var(--fg-muted);
    letter-spacing: 1px;
-   margin-bottom: 1.25rem;
+   margin-bottom: 1.5rem;
 }
 
 .footer-desc {
@@ -1364,7 +1364,7 @@ footer {
 .social-links {
    display: flex;
    gap: 0.5rem;
-   margin-top: 1.25rem;
+   margin-top: 1.5rem;
 }
 
 .social-links a {
@@ -1434,8 +1434,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
    /* Safe areas for notch and home bar */
    .navbar {
-      padding: 0.875rem max(1.25rem, env(safe-area-inset-left));
-      padding-right: max(1.25rem, env(safe-area-inset-right));
+      padding: 1rem max(1.5rem, env(safe-area-inset-left));
+      padding-right: max(1.5rem, env(safe-area-inset-right));
    }
 
    /* Show hamburger button */
@@ -1444,28 +1444,26 @@ a, button { -webkit-tap-highlight-color: transparent; }
    /* Hide the live pill (saves space in tight header) */
    .live-indicator { display: none; }
 
-   /* Full-screen nav overlay */
+   /* Full-screen nav overlay — hidden by default */
    .nav-links {
+      display: none;
+   }
+
+   /* Shown when JS adds .is-open */
+   .nav-links.is-open {
+      display: flex;
       position: fixed;
-      inset: 0;
-      background-color: rgba(13, 9, 7, 0.97);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #0d0907;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 2rem;
       z-index: 999;
       margin-left: 0;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.2s ease;
-   }
-
-   .nav-links.is-open {
-      display: flex;
-      opacity: 1;
-      pointer-events: auto;
    }
 
    .nav-links a {
@@ -1476,14 +1474,14 @@ a, button { -webkit-tap-highlight-color: transparent; }
    }
 
    /* Hero */
-   .hero { flex-direction: column; padding: 2rem 1.25rem; gap: 1.5rem; }
+   .hero { flex-direction: column; padding: 2rem 1.5rem; gap: 1.5rem; }
    .hero-visuals { display: none; }
    .hero h1 { font-size: clamp(3rem, 16vw, 5rem); }
 
    .hero-buttons {
       flex-direction: column;
       align-items: stretch;
-      gap: 0.75rem;
+      gap: 1rem;
    }
 
    .hero-buttons a {
@@ -1503,27 +1501,27 @@ a, button { -webkit-tap-highlight-color: transparent; }
    }
 
    /* Schedule section */
-   .schedule-section { padding: 2rem 1.25rem; }
+   .schedule-section { padding: 2rem 1.5rem; }
    .schedule-section h2 { font-size: 2.5rem; }
    .game-grid { grid-template-columns: 1fr; gap: 1rem; }
 
    /* Lineup */
-   .lineup-featured-section { padding: 0 1.25rem 3rem; }
+   .lineup-featured-section { padding: 0 1.5rem 3rem; }
    .lineup-card { padding: 2rem 1.5rem; }
    .lineup-main-title { font-size: 3rem; margin-bottom: 2rem; }
-   .dish-image-container { height: 220px; }
+   .dish-image-container { height: 224px; }
    .dish-info-content { padding: 2rem 1.5rem; }
-   .dish-title { font-size: 2.2rem; }
+   .dish-title { font-size: 2rem; }
 
    /* Big stats */
-   .features-stats-section { padding: 3rem 1.25rem; }
+   .features-stats-section { padding: 3rem 1.5rem; }
    .big-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 
    /* Events banner */
-   .private-events-section { padding: 0 1.25rem 3rem; }
-   .events-banner-card { grid-template-columns: 1fr; padding: 2rem 1.25rem; gap: 1.5rem; }
-   .events-banner-image-wrap { height: 220px; }
-   .events-buttons { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+   .private-events-section { padding: 0 1.5rem 3rem; }
+   .events-banner-card { grid-template-columns: 1fr; padding: 2rem 1.5rem; gap: 1.5rem; }
+   .events-banner-image-wrap { height: 224px; }
+   .events-buttons { flex-direction: column; align-items: stretch; gap: 1rem; }
    .events-buttons .btn {
       text-align: center;
       min-height: 48px;
@@ -1533,9 +1531,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
    }
 
    /* Games page */
-   .games-hero { flex-direction: column; gap: 1.5rem; padding: 2rem 1.25rem; }
+   .games-hero { flex-direction: column; gap: 1.5rem; padding: 2rem 1.5rem; }
    .minidashboard { min-width: unset; width: 100%; }
-   .schedule-matrix-section { padding: 1rem 1.25rem 4rem; }
+   .schedule-matrix-section { padding: 1rem 1.5rem 4rem; }
 
    /* Matrix table scrolls horizontally */
    .matrix-table-frame { overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -1547,7 +1545,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
    .filter-buttons { flex-wrap: wrap; }
 
    /* Promo banner */
-   .promo-banner-card { flex-direction: column; align-items: flex-start; padding: 2rem 1.25rem; gap: 1.5rem; }
+   .promo-banner-card { flex-direction: column; align-items: flex-start; padding: 2rem 1.5rem; gap: 1.5rem; }
    .promo-heading { font-size: 2.5rem; }
    .promo-action-buttons { flex-direction: column; width: 100%; }
    .btn-promo-yellow, .btn-promo-dark {
@@ -1560,16 +1558,15 @@ a, button { -webkit-tap-highlight-color: transparent; }
    }
 
    /* Footer */
-   footer { padding: 2.5rem 1.25rem max(1.5rem, env(safe-area-inset-bottom, 0)); }
+   footer { padding: 2.5rem 1.5rem max(1.5rem, env(safe-area-inset-bottom, 0)); }
    .footer-columns { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
    .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
 
    /* Menu page */
-   .menu-hero-section { flex-direction: column; padding: 2rem 1.25rem 1rem; gap: 1.5rem; }
+   .menu-hero-section { flex-direction: column; padding: 2rem 1.5rem 1rem; gap: 1.5rem; }
    .kitchen-status-card { min-width: unset; width: 100%; }
-   .filter-section { padding: 0 1.25rem; margin-bottom: 2rem; }
-   .filter-bar-container { flex-wrap: wrap; gap: 0.75rem; }
-   main { padding: 0 1.25rem; padding-bottom: 3rem; }
+   .filter-section { padding: 0 1.5rem; margin-bottom: 2rem; }
+   .filter-bar-container { flex-wrap: wrap; gap: 1rem; }
    .menu-products-grid { grid-template-columns: 1fr; gap: 1.5rem; }
    .category-header-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
    .category-description { text-align: left; }
@@ -1673,18 +1670,18 @@ a, button { -webkit-tap-highlight-color: transparent; }
       background-color: var(--bg-dark);
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 0.75rem 1.5rem;
+      padding: 1rem 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 1erm;
+      gap: 1rem;
    }
 
    .filter-buttons {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.5rem;
       flex-wrap: nowrap;
       overflow-x: auto;
    }
@@ -1811,7 +1808,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
     font-weight: 800;
     text-decoration: none;
     letter-spacing: 0.02em;
-    padding: 1rem 1.75rem;
+    padding: 1rem 2rem;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.2s ease;
@@ -1849,7 +1846,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
       font-weight: 700;
       font-size: 0.8rem;
       letter-spacing: 0.5px;
-      padding: 0.35rem 0.75rem;
+      padding: 0.5rem 1rem;
       border-radius: 6px;
       text-transform: uppercase;
       transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1863,7 +1860,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
    .filter-legend {
       display: flex;
-      gap: 1.25rem;
+      gap: 1.5rem;
       font-family: var(--f-mono);
       font-size: 0.7rem;
       color: var(--fg-muted);
@@ -1936,7 +1933,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
    .menu-item-row {
       border-bottom: 1px dashed var(--line);
-      padding-bottom: 1.25rem;
+      padding-bottom: 1.5rem;
       display: flex;
       flex-direction: column;
    }
@@ -1945,7 +1942,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
    }
 
    .item-name {
@@ -2108,7 +2105,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
     font-weight: 800;
     text-decoration: none;
     letter-spacing: 0.02em;
-    padding: 1rem 1.75rem;
+    padding: 1rem 2rem;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.2s ease;
@@ -2142,3 +2139,13 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .menu-item-row.is-hidden, .menu-category-block.is-hidden {
       display: none !important;
    }
+
+/* This must live AFTER the section-16 `main {}` rule so the mobile
+   padding override actually wins in the cascade. */
+@media (max-width: 768px) {
+   main {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 3rem;
+   }
+}
